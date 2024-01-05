@@ -1,0 +1,24 @@
+<body>
+    <head>
+    <div id="container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.124.0/build/three.min.js"></script>
+   <!-- as a JavaScript source -->
+   <script src="https://lygia.xyz/resolve.js"></script>
+   <script>
+        // 1. FIRST
+
+    // Sync resolver, one include at a time
+    vertSource = resolveLygia(vertSource);
+    fragSource = resolveLygia(fragSource);
+
+
+    
+    // 2. SECOND
+
+    // Use the resolved source code 
+    shdr = createShader(vertSource, fragSource);
+   </script>
+   </head>
+   <body>
+    <div id="shader"></div>
+</body>
